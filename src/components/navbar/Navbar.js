@@ -32,7 +32,7 @@ function Navbar() {
 					</div>
 					<div className="nav-middle">
 						<h1 className="banner">
-							<Link to="/">Posterz</Link>
+							<Link to="/">PosterPanda</Link>
 						</h1>
 					</div>
 					<div className="nav-right">
@@ -48,7 +48,13 @@ function Navbar() {
 					</div>
 				</div>
 			</div>
-			{openCart && <Cart onClose={()=>{setOpenCart(false)}} />}
+			{openCart && (
+				<Cart
+					onClose={() => {
+						setOpenCart(false);
+					}}
+				/>
+			)}
 		</>
 	);
 }
