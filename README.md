@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# PosterPanda :panda_face:
+A frontend for an e-commerce website for buying manga and posters. Built using Create React App and SASS.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Features :star:
+- User can browse through the different products on the website
+- User can add products to their cart
+- User can view their cart and proceed to checkout
+- User can view their order history
+- User can search for products by keywords
 
-## Available Scripts
+## Getting Started :rocket:
 
-In the project directory, you can run:
+### Prerequisites
+- Node.js
+- npm
 
-### `npm start`
+### Installation
+1. Clone the repository to your local machine
+```
+git clone https://github.com/JaeAeich/PosterPanda-client.git
+```
+2. Install the necessary dependencies
+```
+npm i
+```
+3. Start the development server
+```
+npm run start
+```
+This will create a `build` folder with the optimized production code.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Built With :construction_worker:
+- [Create React App](https://create-react-app.dev/) - A tool for creating React applications with no configuration
+- [SASS](https://sass-lang.com/) - A CSS preprocessor for writing maintainable and scalable styles
+- [react-router-dom](https://www.npmjs.com/package/react-router-dom) - A library for client-side routing in React applications
+- [react-icons](https://www.npmjs.com/package/react-icons) - A library of popular icon packs for React applications
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Backend 
+The backend for this project is built using Node.js and MongoDB, you can find the code [here](https://github.com/JaeAiech/PosterPanda-backend)
 
-### `npm test`
+## Contributing :heart:
+- Do not hesitate to give a :star: on the repo if you liked it.
+- Contributions are always welcomed, be it in terms of code or suggestions.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Acknowledgments :clap:
+- Big shoutout to all the amazing coders out there whose code helped make this project possible. :nerd_face:
+- A huge thanks to all the inspiration and motivation that got us started on this journey. :bulb:
+- A special mention to all the open-source community for their support and guidance. :heart:
 
-### `npm run build`
+## Authors :bust_in_silhouette:
+- Jae Aeich - Initial work and ongoing maintenance :computer:
+- jae Aeich - Design and UI contributions :art:
+- Jae Aeich - Backend integration and development :gear:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Don't forget to give us a :star: if you like the project and follow us for updates and new features. Let's make PandaPoster the best e-commerce website for manga and posters together. :smile:
