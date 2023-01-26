@@ -49,7 +49,7 @@ The backend for this project is built using Node.js and MongoDB, you can find th
 
 ## Authors :bust_in_silhouette:
 - Jae Aeich - Initial work and ongoing maintenance :computer:
-- jae Aeich - Design and UI contributions :art:
+- Jae Aeich - Design and UI contributions :art:
 - Jae Aeich - Backend integration and development :gear:
 
 Don't forget to give us a :star: if you like the project and follow us for updates and new features. Let's make PandaPoster the best e-commerce website for manga and posters together. :smile:
