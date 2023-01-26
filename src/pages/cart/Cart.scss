@@ -1,0 +1,42 @@
+.cart {
+	position: fixed;
+	top: 0;
+	right: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+	.overlay {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: rgba(64, 61, 61, 0.571);
+	}
+	.cart-box {
+		height: 100vh;
+		width: 320px;
+		position: absolute;
+		right: 0px;
+		background-color: white;
+		transform: translateX(320px); /* Initial position */
+		animation: cart-slider .3s ease-in-out forwards; /* Animation with delay */
+	}
+}
+
+@keyframes cart-slider {
+	0% {
+		transform: translateX(320px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@media screen and (max-width: 480px) {
+    .cart{
+        .cart-box{
+            width: 100%;
+        }
+    }
+}

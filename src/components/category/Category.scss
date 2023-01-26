@@ -1,0 +1,28 @@
+.category{
+    background-image: url('../../assets/Category.png');
+    width: 32%;
+    aspect-ratio: 16/9;
+    background-size: cover;
+    .category-content{
+        height: 100%;
+        background-color: rgba($color:#000 ,$alpha:0.4);
+        transition: 0.2s ease-in-out ;
+        .heading{
+            color: white;
+        }
+        &:hover{
+            background-color: rgba($color:#000 ,$alpha:0.3);
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .category{
+        width: 48%;
+    }
+}
+@media screen and (max-width: 480px){
+    .category{
+        width: 100%;
+    }
+}

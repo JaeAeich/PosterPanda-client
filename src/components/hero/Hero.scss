@@ -1,0 +1,57 @@
+.hero{
+    height: 80vh;
+    background-image: url('../../assets/banner.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 80%;
+    .hero-content{
+        text-align: center;
+        height: 100%;
+        flex-direction: column;
+        background-color: rgba($color:#000, $alpha:0.4);
+        gap:10px;
+        .heading{
+            font-size: 3rem;
+            color:whitesmoke;
+        }
+        .sub-heading{
+            font-size: 1.2rem;
+            color:white;
+        }
+
+        .primary-btn{
+            color:white;
+            padding: 12px 16px;
+            border-radius:4px;
+            cursor: pointer;
+            user-select:none;
+            background: var(--accent-color);
+            font-weight: 700;
+        }
+
+        .primary-btn:hover{
+            background-color: #9800bf;
+        }
+
+        .primary-btn:active{
+            background-color: #b413ff;
+        }
+
+    
+
+    }
+}
+
+@media screen and (max-width: 640px){
+    .hero{
+        height: 60vh;
+        .hero-content{
+            .heading{
+                font-size: 2rem;;
+            }
+            .sub-heading{
+                font-size: 1rem;
+            }
+        }
+    }
+}
