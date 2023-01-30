@@ -1,12 +1,26 @@
 import React from "react";
 import "./Product.scss";
-import P1 from "../../assets/P2.png";
+import { useNavigate } from "react-router-dom";
+import Loader from "../loader/Loader";
 
 function Product(product) {
 	const prodObj = product.product.attributes;
-	// console.log("this prod =>", prodObj.image.data[0].attributes.url);
+	const navigate = useNavigate();
+	console.log(product);
+	if (!product) {
+		return (
+			<div className="product">
+				<Loader />
+			</div>
+		);
+	}
 	return (
-		<div className="product">
+		<div
+			className="product"
+			onClick={() => {
+				navigate(`/products/${prodObj.key}`);
+			}}
+		>
 			<div className="product-container">
 				<div className="product-img">
 					<div className="img-container">

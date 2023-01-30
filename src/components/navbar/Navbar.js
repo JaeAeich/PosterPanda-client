@@ -14,17 +14,17 @@ function Navbar() {
 					<div className="nav-left">
 						<ul className="link-group">
 							<li className="link-hover">
-								<Link className="link" to="/products?catergory=comics">
+								<Link className="link" to="/category/comics">
 									Comics
 								</Link>
 							</li>
 							<li className="link-hover">
-								<Link className="link" to="/products?catergory=tv">
+								<Link className="link" to="/category/tv-shows">
 									Tv Shows
 								</Link>
 							</li>
 							<li className="link-hover">
-								<Link className="link" to="/products?catergory=sports">
+								<Link className="link" to="/category/sports">
 									Sports
 								</Link>
 							</li>

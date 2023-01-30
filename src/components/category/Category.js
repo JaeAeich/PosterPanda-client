@@ -1,10 +1,19 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import Loader from "../loader/Loader";
 import "./Category.scss";
 
 function Category(category) {
 	const navigate = useNavigate();
 	// console.log(category.category.attributes.image.data[0].attributes.url);
+
+	if (!category) {
+		return (
+			<div className="category">
+				<Loader />
+			</div>
+		);
+	}
 	return (
 		<div
 			onClick={() => {

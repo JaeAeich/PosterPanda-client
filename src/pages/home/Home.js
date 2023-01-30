@@ -14,11 +14,12 @@ function Home() {
 		const topPickResponse = await axiosClient.get("/products?populate=image");
 
 		setCategories(categoryResponse.data.data);
-		setTopProduct(
-			topPickResponse.data.data.filter(
-				(product) => product.attributes.isTopPick === true
-			)
+		const filteredTopProduct = topPickResponse.data.data.filter(
+			(product) => product.attributes.isTopPick === true
 		);
+		setTopProduct(filteredTopProduct);
+		// console.log("hmmm", topProduct); //this is giving null
+		console.log("hmmm", filteredTopProduct); //this is giving coorect response
 	}
 
 	useEffect(() => {
@@ -34,6 +35,7 @@ function Home() {
 					<p className="subheading">
 						Shop from the best, our tv collections and comics.
 					</p>
+					{/* <button onClick={() => console.log(topProduct)}>print</button> */}
 				</div>
 				<div className="content">
 					{categories?.map((category) => (
