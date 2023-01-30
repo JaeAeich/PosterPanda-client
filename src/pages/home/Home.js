@@ -11,16 +11,14 @@ function Home() {
 		const categoryResponse = await axiosClient.get(
 			"/categories?populate=image"
 		);
-		const topPickResponse = await axiosClient.get(
-			"/products?populate=image,filter[isTopPick][$eq]=true"
-		);
+		const topPickResponse = await axiosClient.get("/products?populate=image");
 
 		setCategories(categoryResponse.data.data);
-		setTopProduct(topPickResponse.data.data);
-		console.log(topPickResponse.data.data);
-		// topPickResponse.data.data.map((obj) => {
-		// 	console.log(obj.id);
-		// });
+		setTopProduct(
+			topPickResponse.data.data.filter(
+				(product) => product.attributes.isTopPick === true
+			)
+		);
 	}
 
 	useEffect(() => {
