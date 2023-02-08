@@ -3,31 +3,25 @@ import { Link } from "react-router-dom";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import "./Navbar.scss";
 import Cart from "../../pages/cart/Cart";
+import { useSelector } from "react-redux";
 
 function Navbar() {
 	const [openCart, setOpenCart] = useState(false);
 
+	const categories = useSelector((state) => state.categoryReducer.categories);
 	return (
 		<>
 			<div className="navbar ">
 				<div className="container nav-container">
 					<div className="nav-left">
 						<ul className="link-group">
-							<li className="link-hover">
-								<Link className="link" to="/category/comics">
-									Comics
-								</Link>
-							</li>
-							<li className="link-hover">
-								<Link className="link" to="/category/tv-shows">
-									Tv Shows
-								</Link>
-							</li>
-							<li className="link-hover">
-								<Link className="link" to="/category/sports">
-									Sports
-								</Link>
-							</li>
+							{categories?.map((category) => (
+								<li className="link-hover" key={category.attributes.key}>
+									<Link className="link" to="/category/comics">
+										{category.attributes.name}
+									</Link>
+								</li>
+							))}
 						</ul>
 					</div>
 					<div className="nav-middle">

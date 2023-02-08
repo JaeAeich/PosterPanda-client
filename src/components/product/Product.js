@@ -6,7 +6,6 @@ import Loader from "../loader/Loader";
 function Product(product) {
 	const prodObj = product.product.attributes;
 	const navigate = useNavigate();
-	console.log(product);
 	if (!product) {
 		return (
 			<div className="product">

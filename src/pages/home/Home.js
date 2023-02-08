@@ -1,19 +1,22 @@
 import React, { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
 import { Category, Hero, Product } from "../../components";
 import { axiosClient } from "../../utils/axiosClient";
 import "./Home.scss";
 
 function Home() {
-	const [categories, setCategories] = useState(null);
+	// const [categories, setCategories] = useState(null);
 	const [topProduct, setTopProduct] = useState(null);
 
+	const categories = useSelector((state) => state.categoryReducer.categories);
+
 	async function fetchData() {
-		const categoryResponse = await axiosClient.get(
-			"/categories?populate=image"
-		);
+		// const categoryResponse = await axiosClient.get(
+		// 	"/categories?populate=image"
+		// );
 		const topPickResponse = await axiosClient.get("/products?populate=image");
 
-		setCategories(categoryResponse.data.data);
+		// setCategories(categoryResponse.data.data);
 		const filteredTopProduct = topPickResponse.data.data.filter(
 			(product) => product.attributes.isTopPick === true
 		);

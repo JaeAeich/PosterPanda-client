@@ -3,6 +3,7 @@ import "./Categories.scss";
 import Product from "../../components/product/Product";
 import { useNavigate, useParams } from "react-router-dom";
 import { axiosClient } from "../../utils/axiosClient";
+import { useSelector } from "react-redux";
 
 function Categories() {
 	const navigate = useNavigate();
@@ -10,6 +11,7 @@ function Categories() {
 
 	const [categoryId, setCategoryId] = useState(null);
 	const [categoryProduct, setCategoryProduct] = useState(null);
+	const category = useSelector((state) => state.categoryReducer.categories);
 
 	async function fetchData() {
 		setCategoryProduct(null);
@@ -23,31 +25,31 @@ function Categories() {
 			});
 			setCategoryProduct(fiterdCategoryProduct);
 		}
-		// console.log(data.data.data);
 	}
 
 	useEffect(() => {
 		setCategoryId(params.categoryId);
 		fetchData();
-		console.log(categoryId);
-		console.log(categoryProduct);
+		// console.log(categoryId);
+		// console.log(categoryProduct);
+		// console.log(category);
 	}, [params]);
 
-	const category = [
-		{
-			id: "comics",
-			value: "Comics",
-		},
-		{
-			id: "tv-shows",
-			value: "Tv-shows",
-		},
-		,
-		{
-			id: "sports",
-			value: "Sports",
-		},
-	];
+	// const category = [
+	// 	{
+	// 		id: "comics",
+	// 		value: "Comics",
+	// 	},
+	// 	{
+	// 		id: "tv-shows",
+	// 		value: "Tv-shows",
+	// 	},
+	// 	,
+	// 	{
+	// 		id: "sports",
+	// 		value: "Sports",
+	// 	},
+	// ];
 	const handleChange = (e) => {
 		setCategoryId(e.target.value);
 		navigate(`/category/${e.target.value}`);
@@ -85,17 +87,17 @@ function Categories() {
 							<div className="category-filter">
 								{category.map((obj) => {
 									return (
-										<div key={obj.id} className="option">
+										<div key={obj.attributes.key} className="option">
 											<input
 												name="category-select"
 												className="category-select"
 												type="radio"
-												id={obj.id}
-												value={obj.id}
+												id={obj.attributes.key}
+												value={obj.attributes.key}
 												onChange={handleChange}
-												checked={obj.id === categoryId}
+												checked={obj.attributes.key === categoryId}
 											/>
-											<label htmlFor={obj.value}>{obj.value}</label>
+											<label htmlFor={obj.value}>{obj.attributes.name}</label>
 										</div>
 									);
 								})}
