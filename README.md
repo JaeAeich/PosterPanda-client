@@ -36,7 +36,7 @@ This will create a `build` folder with the optimized production code.
 - [react-icons](https://www.npmjs.com/package/react-icons) - A library of popular icon packs for React applications
 
 ## Backend 
-The backend for this project is built using Node.js and MongoDB, you can find the code [here](https://github.com/JaeAiech/PosterPanda-backend)
+The backend for this project is built using Node.js and MongoDB, you can find the code [here](https://github.com/JaeAeich/PosterPanda-backend)
 
 ## Contributing :heart:
 - Do not hesitate to give a :star: on the repo if you liked it.
