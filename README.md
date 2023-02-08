@@ -35,6 +35,12 @@ This will create a `build` folder with the optimized production code.
 - [react-router-dom](https://www.npmjs.com/package/react-router-dom) - A library for client-side routing in React applications
 - [react-icons](https://www.npmjs.com/package/react-icons) - A library of popular icon packs for React applications
 
+## ScreenShots :camera:
+![Alt text](/client/screenshots/s1.png)
+![Alt text](/client/screenshots/s2.png)
+![Alt text](/client/screenshots/s3.png)
+![Alt text](/client/screenshots/s4.png)
+
 ## Backend 
 The backend for this project is built using Node.js and MongoDB, you can find the code [here](https://github.com/JaeAeich/PosterPanda-backend)
 
