@@ -41,6 +41,8 @@ This will create a `build` folder with the optimized production code.
 ![Alt text](/screenshots/s3.png)
 ![Alt text](/screenshots/s4.png)
 
+## 📺[Demo Video](https://youtu.be/nljJRODeBEo)
+
 ## Backend 
 The backend for this project is built using Node.js and MongoDB, you can find the code [here](https://github.com/JaeAeich/PosterPanda-backend)
 
